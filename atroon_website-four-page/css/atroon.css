@@ -1,0 +1,936 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #030c09;
+}
+@media screen and (min-width :320px) and (max-width:480px)  {
+  /* classe */
+  .sectionOne {
+    position: relative;
+    width: 100%;
+    height: 643px;
+    background-image: url(../img/Layer1mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sectionTwo {
+    position: absolute;
+    width: 100%;
+    height: 254px;
+    background-image: url(../img/Layer2mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 40%;
+  }
+  .sectionThree {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    background-image: url(../img/Layer3mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -20%;
+  }
+  .sectionFour {
+    position: absolute;
+    width: 100%;
+    height: 326px;
+    background-image: url(../img/Layer5mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 67%;
+  }
+  .sShip1 {
+    position: absolute;
+    width: 226px;
+    height: 254px;
+    bottom: 323px;
+    right: -28px;
+  }
+  .sShip2 {
+    visibility: hidden;
+  }
+  /* animations */
+  @keyframes jet {
+    from {
+      width: 226px;
+      height: 254px;
+    }
+    to {
+      width: 89px;
+      height: 80px;
+      bottom: 10px;
+      right: 213px;
+    }
+  }
+  @keyframes jetII {
+    from {
+      width: 89px;
+      height: 80px;
+      bottom: 10px;
+      right: 213px;
+    }
+    to {
+      width: 226px;
+      height: 254px;
+    }
+  }
+  @keyframes moveSecOne {
+    from {
+      top: 40%;
+
+    }
+    to {
+      top: -50%;
+    }
+  }
+  @keyframes moveSecOneII {
+    from {
+      top: -50%;
+    }
+    to {
+      top: 40%;
+    }
+  }
+  @keyframes moveSecTwo {
+    from {
+      top: -20%;
+    }
+    to {
+      top: -110%;
+    }
+  }
+  @keyframes moveSecTwoII {
+    from {
+      top: -110%;
+    }
+    to {
+      top: -20%;
+    }
+  }
+  @keyframes moveSecThree {
+    from {
+      top: 67%;
+    }
+    to {
+      top: 42%;
+    }
+  }
+  @keyframes moveSecThreeII {
+    from {
+      top: 42%;
+    }
+    to {
+      top: 67%;
+    }
+  }
+}
+@media screen and (min-width :768px)  {
+  /* classe */
+  .sectionOne {
+    position: relative;
+    width: 100%;
+    height: 436px;
+    background-image: url(../img/Layer1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sectionTwo {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/Layer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 40%;
+  }
+  .sectionThree {
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    background-image: url(../img/Layer3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -20%;
+  }
+  .sectionFour {
+    position: absolute;
+    width: 100%;
+    height: 195px;
+    background-image: url(../img/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 67%;
+  }
+  .sShip1 {
+    position: absolute;
+    width: 263px;
+    height: 258px;
+    bottom: -60px;
+    right: 21px;
+  }
+  .sShip2 {
+    position: absolute;
+    width: 204px;
+    height: 198px;
+    bottom: 12px;
+    right: 121px;
+  }
+  /* animations */
+  @keyframes jet {
+    from {
+      width: 263px;
+      height: 258px;
+    }
+    to {
+      width: 89px;
+      height: 80px;
+      bottom: 10px;
+      right: 213px;
+    }
+  }
+  @keyframes jetII {
+    from {
+      width: 89px;
+      height: 80px;
+      bottom: 10px;
+      right: 213px;
+    }
+    to {
+      width: 263px;
+      height: 258px;
+    }
+  }
+  @keyframes moveSecOne {
+    from {
+      top: 40%;
+
+    }
+    to {
+      top: -50%;
+    }
+  }
+  @keyframes moveSecOneII {
+    from {
+      top: -50%;
+    }
+    to {
+      top: 40%;
+    }
+  }
+  @keyframes moveSecTwo {
+    from {
+      top: -20%;
+    }
+    to {
+      top: -110%;
+    }
+  }
+  @keyframes moveSecTwoII {
+    from {
+      top: -110%;
+    }
+    to {
+      top: -20%;
+    }
+  }
+  @keyframes moveSecThree {
+    from {
+      top: 67%;
+    }
+    to {
+      top: 42%;
+    }
+  }
+  @keyframes moveSecThreeII {
+    from {
+      top: 42%;
+    }
+    to {
+      top: 67%;
+    }
+  }
+}
+@media screen and (min-width :992px)  {
+  /* classe */
+  .sectionOne {
+    position: relative;
+    width: 100%;
+    height: 543px;
+    background-image: url(../img/Layer1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sectionTwo {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/Layer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 40%;
+  }
+  .sectionThree {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    background-image: url(../img/Layer3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -20%;
+  }
+  .sectionFour {
+    position: absolute;
+    width: 100%;
+    height: 276px;
+    background-image: url(../img/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 56%;
+  }
+  .sShip1 {
+    position: absolute;
+    width: 327px;
+    height: 321px;
+    bottom: -64px;
+    right: 45px;
+  }
+  .sShip2 {
+    position: absolute;
+    width: 254px;
+    height: 245px;
+    bottom: 20px;
+    right: 159px;
+  }
+  /* animations */
+  @keyframes jet {
+    from {
+      width: 327px;
+      height: 321px;
+    }
+    to {
+      width: 189px;
+      height: 180px;
+      bottom: 10px;
+      right: 213px;
+    }
+  }
+  @keyframes jetII {
+    from {
+      width: 189px;
+      height: 180px;
+      bottom: 10px;
+      right: 213px;
+    }
+    to {
+      width: 327px;
+      height: 321px;
+    }
+  }
+  /* @keyframes backGr {
+    from {
+      height: 580px;
+    }
+    to {
+      height: 210px;
+    }
+  }
+  @keyframes backGrII {
+    from {
+      height: 210px;
+    }
+    to {
+      height: 580px;
+    }
+  } */
+  @keyframes moveSecOne {
+    from {
+      top: 40%;
+      height: 350px;
+    }
+    to {
+      top: -50%;
+      height: 250px;
+    }
+  }
+  @keyframes moveSecOneII {
+    from {
+      top: -50%;
+      height: 250px;
+    }
+    to {
+      top: 40%;
+      height: 350px;
+    }
+  }
+  @keyframes moveSecTwo {
+    from {
+      top: -20%;
+    }
+    to {
+      top: -110%;
+    }
+  }
+  @keyframes moveSecTwoII {
+    from {
+      top: -110%;
+    }
+    to {
+      top: -20%;
+    }
+  }
+  @keyframes moveSecThree {
+    from {
+      top: 56%;
+    }
+    to {
+      top: 42%;
+    }
+  }
+  @keyframes moveSecThreeII {
+    from {
+      top: 42%;
+    }
+    to {
+      top: 56%;
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (max-width :1280px) {
+  /* classe */
+  .sectionOne {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sectionTwo {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/Layer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 45%;
+  }
+  .sectionThree {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    background-image: url(../img/Layer3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -23%;
+  }
+  .sectionFour {
+    position: absolute;
+    width: 100%;
+    height: 276px;
+    background-image: url(../img/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 67%;
+  }
+  .sShip1 {
+    position: absolute;
+    width: 409px;
+    height: 401px;
+    bottom: -83px;
+    right: 45px;
+  }
+  .sShip2 {
+    position: absolute;
+    width: 318px;
+    height: 307px;
+    bottom: 20px;
+    right: 178px;
+  }
+  /* animations */
+  @keyframes jet {
+    from {
+      width: 409px;
+      height: 401px;
+    }
+    to {
+      width: 289px;
+      height: 280px;
+      bottom: 10px;
+      right: 213px;
+    }
+  }
+  @keyframes jetII {
+    from {
+      width: 289px;
+      height: 280px;
+      bottom: 10px;
+      right: 213px;
+    }
+    to {
+      width: 409px;
+      height: 401px;
+    }
+  }
+  @keyframes backGr {
+    from {
+      height: 580px;
+    }
+    to {
+      height: 90px;
+    }
+  }
+  @keyframes backGrII {
+    from {
+      height: 90px;
+    }
+    to {
+      height: 580px;
+    }
+  }
+  @keyframes moveSecOne {
+    from {
+      top: 45%;
+      height: 350px;
+    }
+    to {
+      top: -50%;
+      height: 250px;
+    }
+  }
+  @keyframes moveSecOneII {
+    from {
+      top: -50%;
+      height: 250px;
+    }
+    to {
+      top: 45%;
+      height: 350px;
+    }
+  }
+  @keyframes moveSecTwo {
+    from {
+      top: -23%;
+    }
+    to {
+      top: -110%;
+    }
+  }
+  @keyframes moveSecTwoII {
+    from {
+      top: -110%;
+    }
+    to {
+      top: -23%;
+    }
+  }
+  @keyframes moveSecThree {
+    from {
+      top: 67%;
+    }
+    to {
+      top: 56%;
+    }
+  }
+  @keyframes moveSecThreeII {
+    from {
+      top: 56%;
+    }
+    to {
+      top: 67%;
+    }
+  }
+}
+@media screen and (min-width: 1366px) and (max-width :1440px) {
+  .sectionOne {
+    position: relative;
+    width: 100%;
+    height: 580px;
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sectionTwo {
+    position: absolute;
+    width: 100%;
+    height: 350px;
+    background-image: url(../img/Layer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 50%;
+  }
+  .sectionThree {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    background-image: url(../img/Layer3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -27%;
+  }
+  .sectionFour {
+    position: absolute;
+    width: 100%;
+    height: 276px;
+    background-image: url(../img/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 76%;
+  }
+  .sShip1 {
+    position: absolute;
+    width: 409px;
+    height: 401px;
+    bottom: -83px;
+    right: 88px;
+  }
+  .sShip2 {
+    position: absolute;
+    width: 318px;
+    height: 307px;
+    bottom: 35px;
+    right: 230px;
+  }
+  /* animations */
+  @keyframes jet {
+    from {
+      width: 409px;
+      height: 401px;
+    }
+    to {
+      width: 289px;
+      height: 280px;
+      bottom: 10px;
+      right: 213px;
+    }
+  }
+  @keyframes jetII {
+    from {
+      width: 289px;
+      height: 280px;
+      bottom: 10px;
+      right: 213px;
+    }
+    to {
+      width: 409px;
+      height: 401px;
+    }
+  }
+  @keyframes backGr {
+    from {
+      height: 580px;
+    }
+    to {
+      height: 100px;
+    }
+  }
+  @keyframes backGrII {
+    from {
+      height: 100px;
+    }
+    to {
+      height: 580px;
+    }
+  }
+  @keyframes moveSecOne {
+    from {
+      top: 50%;
+      height: 350px;
+    }
+    to {
+      top: -50%;
+      height: 250px;
+    }
+  }
+  @keyframes moveSecOneII {
+    from {
+      top: -50%;
+      height: 250px;
+    }
+    to {
+      top: 50%;
+      height: 350px;
+    }
+  }
+  @keyframes moveSecTwo {
+    from {
+      top: -27%;
+    }
+    to {
+      top: -110%;
+    }
+  }
+  @keyframes moveSecTwoII {
+    from {
+      top: -110%;
+    }
+    to {
+      top: -27%;
+    }
+  }
+  @keyframes moveSecThree {
+    from {
+      top: 76%;
+    }
+    to {
+      top: 55%;
+    }
+  }
+  @keyframes moveSecThreeII {
+    from {
+      top: 55%;
+    }
+    to {
+      top: 76%;
+    }
+  }
+}
+@media screen and (min-width: 1920px) and (max-width :2048px) {
+  .sectionOne {
+    position: relative;
+    width: 100%;
+    height: 802px;
+    background-image: url(../img/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .sectionTwo {
+    position: absolute;
+    width: 100%;
+    height: 664px;
+    background-image: url(../img/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:57%;
+  }
+  .sectionThree {
+    position: absolute;
+    width: 100%;
+    height: 664px;
+    background-image: url(../img/Layer3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -21%;
+  }
+  .sectionFour {
+    position: absolute;
+    width: 100%;
+    height: 362px;
+    background-image: url(../img/4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 67%;
+  }
+  .sShip1 {
+    position: absolute;
+    width: 608px;
+    height: 595px;
+    bottom: -97px;
+    right: 59px;
+  }
+  .sShip2 {
+    position: absolute;
+    width: 458px;
+    height: 441px;
+    bottom: 42px;
+    right: 316px;
+  }
+  /* animations */
+  @keyframes jet {
+    from {
+      width: 608px;
+      height: 595px;
+    }
+    to {
+      width: 489px;
+      height: 480px;
+      bottom: 10px;
+      right: 213px;
+    }
+  }
+  @keyframes jetII {
+    from {
+      width: 489px;
+      height: 480px;
+      bottom: 10px;
+      right: 213px;
+    }
+    to {
+      width: 608px;
+      height: 595px;
+    }
+  }
+  /* @keyframes backGr {
+    from {
+      height: 580px;
+    }
+    to {
+      height: 210px;
+    }
+  }
+  @keyframes backGrII {
+    from {
+      height: 210px;
+    }
+    to {
+      height: 580px;
+    }
+  } */
+  @keyframes moveSecOne {
+    from {
+      top:57%;
+    }
+    to {
+      top:-50%;
+    }
+  }
+  @keyframes moveSecOneII {
+    from {
+      top:-50%;
+    }
+    to {
+      top:57%;
+    }
+  }
+  @keyframes moveSecTwo {
+    from {
+      top: -21%;
+    }
+    to {
+      top: -110%;
+    }
+  }
+  @keyframes moveSecTwoII {
+    from {
+      top: -110%;
+    }
+    to {
+      top: -21%;
+    }
+  }
+  @keyframes moveSecThree {
+    from {
+      top:67%;
+    }
+    to {
+      top: 42%;
+    }
+  }
+  @keyframes moveSecThreeII {
+    from {
+      top: 42%;
+    }
+    to {
+      top: 67%;
+    }
+  }
+}
+.whyUsTitle {
+  color: #ceb06b;
+  font-family: RegYekan;
+  font-size: 1.8301610541727673vw;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 4.24;
+  letter-spacing: normal;
+  margin-top: 30%;
+}
+.whyUsDes {
+  font-family: RegYekan;
+  font-size: 1.0248901903367496vw;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.83;
+  letter-spacing: -0.4px;
+  text-align: justify;
+  color: #808285;
+  text-align-last: right;
+}
+.listItem {
+  width: 1.3vw;
+  height: 1.2vw;
+}
+.portfolioImg {
+  width: 11.71303074670571VW;
+  height: 11.71303074670571VW;
+  margin-top: 5px;
+  border: #000000  1px;
+}
+.portfolioTitle {
+  color: #ceb06b;
+  font-family: RegYekan;
+  font-size: 1.8301610541727673vw;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 4.24;
+  letter-spacing: normal;
+  text-align: center;
+  margin-top: 10%;
+}
+#sfOne{
+  background: url(../img/Links/01.jpg);
+  background-size: contain;
+}
+#sfOne:hover{
+  background: url(../img/Links/hover/01.jpg);
+  background-size: contain;
+}
+#sfTwo{
+  background: url(../img/Links/03.jpg);
+  background-size: contain;
+}
+#sfTwo:hover{
+  background: url(../img/Links/hover/02.jpg);
+  background-size: contain;
+}
+#sfThree{
+  background: url(../img/Links/04.jpg);
+  background-size: contain;
+}
+#sfThree:hover{
+  background: url(../img/Links/hover/03.jpg);
+  background-size: contain;
+}
+#sfFour{
+  background: url(../img/Links/06.jpg);
+  background-size: contain;
+}
+#sfFour:hover{
+  background: url(../img/Links/hover/04.jpg);
+  background-size: contain;
+}
+#sfFive{
+  background: url(../img/Links/07.jpg);
+  background-size: contain;
+}
+#sfFive:hover{
+  background: url(../img/Links/hover/05.jpg);
+  background-size: contain;
+}
+#sfSix{
+  background: url(../img/Links/08.jpg);
+  background-size: contain;
+}
+#sfSix:hover{
+  background: url(../img/Links/hover/06.jpg);
+  background-size: contain;
+}
+#sfSeven{
+  background: url(../img/Links/09.jpg);
+  background-size: contain;
+}
+#sfSeven:hover{
+  background: url(../img/Links/hover/07.jpg);
+  background-size: contain;
+}
+#sfEight{
+  background: url(../img/Links/205.jpg);
+  background-size: contain;
+}
+#sfEight:hover{
+  background: url(../img/Links/hover/08.jpg);
+  background-size: contain;
+}
