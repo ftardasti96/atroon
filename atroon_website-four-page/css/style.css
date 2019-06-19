@@ -224,6 +224,51 @@ a:active {
   right: 3em;
   top: -6vh;
 }
+.flesh-container {
+  /* width: 30%; */
+  /* height: auto; */
+  position: absolute;
+  /* bottom: 40.19%; */
+  top: 12vh;
+  left: 2.2vw;
+  background: transparent;
+  border: none;
+}
+.fleshCon {
+  margin-left: 20px;
+  background: transparent;
+  width: 20px;
+  /* border: none; */
+}
+.flesh-container:hover {
+  cursor: pointer;
+  /* background: #f56c6c; */
+}
+.flesh:hover {
+  background: #ceb06b;
+}
+.go-home {
+  /* height: 5%; */
+  width: auto;
+  position: absolute;
+  /* border: none; */
+  background: purple;
+  cursor: pointer;
+  top: 0vh;
+}
+.flesh {
+  position: absolute;
+  left: 0;
+}
+.flesh img{
+  position: inherit;
+  left: 2.7vw;
+}
+.go-home:active, .go-home:hover, .flesh-container:hover, .flesh-container:active {
+  border: none;
+  background: transparent;
+
+}
 .mouse {
   /* background: #e26d06; */
   width: 1.81%;
@@ -263,7 +308,7 @@ a:active {
 }
 .l a {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.878vw;
   font-family: MyriadLight;
   color: white;
   padding: 0.125em 0.4vw;
@@ -397,7 +442,7 @@ a:active {
   font-family: Yekan;
   color: #ceb06b;
   text-align: center;
-  font-size: 15px;
+  font-size: 1.6vw;
   font-weight: bolder;
   padding-top: 5px;
   /* margin-right: 5%; */
@@ -419,22 +464,22 @@ a:active {
 .rightTxt {
   text-align: justify;
   text-align-last: center;
-  font-size: 12px;
-  color: white;
+  font-size: 0.878vw;
+  color: #808285;
   direction: rtl;
   font-family: RegYekan;
 }
 .right3 {
   margin-top: 3%;
   z-index: 10;
-  margin-left: 20%;
+  margin-left: 15%;
   /* margin-right: 20%; */
 }
 .right3 button {
   background-color: transparent;
   color: #ceb06b;
   font-family: Yekan;
-  font-size: 75%;
+  font-size: 0.878vw;
   border: #ceb06b solid 2px;
   padding: 3px 20px;
   border-radius: 20px;
@@ -514,7 +559,7 @@ button:active {
 .txt1 {
   position: absolute;
   top: 71%;
-  font-size: 20px;
+  font-size: 1.46vw;
   font-family: YekanBold;
   color: #ceb06b;
 }
@@ -531,7 +576,7 @@ button:active {
   background-color: transparent;
   color: #ceb06b;
   font-family: Yekan;
-  font-size: 75%;
+  font-size: 0.878vw;
   border: #ceb06b solid 2px;
   padding: 3px 20px;
   border-radius: 20px;
@@ -574,7 +619,7 @@ button:active {
   font-family: RegYekan;
   text-align: justify;
   color: #808285;
-  font-size: 1.2em;
+  font-size: 1.2vw;
   /* margin-top: 3%; */
   /* padding: 0 20%; */
   text-align-last: right;
@@ -590,7 +635,7 @@ button:active {
 }
 .p1-sec3 {
   color: #ceb06b;
-  font-size: 1.6em;
+  font-size: 1.6vw;
   font-family: YekanBold;
   /* position: absolute;
   top: 50px; */
@@ -603,7 +648,7 @@ button:active {
   font-family: RegYekan;
   text-align: justify;
   color: #808285;
-  font-size: 1em;
+  font-size: 1vw;
   padding-left: 15%;
 }
 .sec3 img{
@@ -626,9 +671,14 @@ button:active {
   background-color: transparent;
   color: #ceb06b;
   font-family: Yekan;
-  font-size: 1em;
+  font-size: 1vw;
   border: #ceb06b solid 2px;
   padding: 3px 1em;
   border-radius: 20px;
   /* margin-top: 2em; */
+}
+.textEvent {
+  font-family: RegYekan;
+  font-size: 0.8vw;
+  transform: rotate(270deg);
 }

@@ -134,6 +134,7 @@
 
       var pageCls = this.selectors.page.substring(1),
           pageHtml = '<ul class=' + pageCls + '>';
+          pageHtml += '<div class="textEvent"> </div>';
       // علامت های سمت چپ صفحه برای رفتن به صفحات بعد
       for(var i = 0; i < this.pagesCount; i++) {
         pageHtml += `<li><div class=""><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.13 14.03">
