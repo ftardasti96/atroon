@@ -439,7 +439,7 @@ a:active {
   font-family: Yekan;
   color: #ceb06b;
   text-align: center;
-  font-size: 1vw;
+  font-size: 1.6vw;
   font-weight: bolder;
   padding-top: 5px;
   /* margin-right: 5%; */
@@ -462,14 +462,14 @@ a:active {
   text-align: justify;
   text-align-last: center;
   font-size: 0.878vw;
-  color: white;
+  color: #808285;
   direction: rtl;
   font-family: RegYekan;
 }
 .right3 {
   margin-top: 3%;
   z-index: 10;
-  margin-left: 20%;
+  margin-left: 15%;
   /* margin-right: 20%; */
 }
 .right3 button {
@@ -673,4 +673,9 @@ button:active {
   padding: 3px 1em;
   border-radius: 20px;
   /* margin-top: 2em; */
+}
+.textEvent {
+  font-family: RegYekan;
+  font-size: 0.8vw;
+  transform: rotate(270deg);
 }
