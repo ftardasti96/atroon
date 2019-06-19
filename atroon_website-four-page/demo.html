@@ -12,6 +12,18 @@
     <div class="container2" data-fs-scroll>
       <div onmousewheel="test(event)" class="sections">
         <div class="section section0">
+            <div class="row">
+                <div class="col-lg-12 hidden-md hidden-sm">
+                  <nav class="l">
+                    <div class="on">
+                      <a href="#">EN</a>
+                      <a href="#" class="active">PER</a>
+                      <a href="#">AR</a>
+                      <a href="#">GER</a>
+                    </div>
+                  </nav>
+                </div>
+              </div>
           <div id="myDIV" class="row">
             <div class="col col-lg-12 col-md-12 col-sm-12 col-xl-12  ">
               <div id="sectionOne" class="sectionOne">
@@ -43,6 +55,18 @@
                 </div>
               </div>
             </div>
+          </div>
+          <div class="mouse">
+            <object
+              type="image/svg+xml"
+              data="./image/7_1-07.svg"
+              class="mouseSvg"
+            ></object>
+            <object
+              type="image/svg+xml"
+              data="./image/7_2-07.svg"
+              class="mouseScroll"
+            ></object>
           </div>
         </div>
         <div class="section section1">
@@ -109,18 +133,6 @@
         <div class="section section2">
           <div class="container">
             <div class="row">
-              <div class="col-lg-12 hidden-md hidden-sm">
-                <nav class="l">
-                  <div class="on">
-                    <a href="#">EN</a>
-                    <a href="#" class="active">PER</a>
-                    <a href="#">AR</a>
-                    <a href="#">GER</a>
-                  </div>
-                </nav>
-              </div>
-            </div>
-            <div class="row">
               <div class="col-lg-12 col-xl-12 hidden-md hidden-sm fitImg">
                 <img
                   src="./image/1.png"
@@ -150,11 +162,6 @@
                 <div
                   class="col-lg-offset-8 col-lg-4 col-xl-offset-9 col-xl-3 rightTeil"
                 >
-                  <div class="row">
-                    <div class="col-lg-12 col-xl-12 right1">
-                      <img src="./image/Layer 8.png" />
-                    </div>
-                  </div>
                   <div class="row">
                     <div class="col-lg-12 col-xl-12 right4">
                       آژانس خلاقیت آترون
@@ -452,10 +459,10 @@
       <div class="second container">
         <div class="row">
           <div class="col col-md-12 hidden-sm logo">
-            <img src="image/1-07.png" />
+            <img src="image/Layer 8.png" />
           </div>
           <div class="col col-sm-12 hidden-md hidden-lg logo-sm">
-            <img src="image/logo-sm.png" />
+            <img src="image/Layer 8.png" />
           </div>
 
           <div class="col-md-12 col-sm-12 hidden-lg menu">
@@ -468,6 +475,7 @@
           <div
             class="col-lg-offset-4 col-lg-4 col-xl-offset-4 col-xl-4 hidden-md hidden-sm"
           >
+            <img src="image/6-07.png" class="foot1 img-responsive" />
             <nav class="footItem text-center">
               <a href="#">طراحی وب سایت</a>
               <a href="#">طراحی تبلیغات</a>
@@ -475,16 +483,16 @@
               <a href="#">سئو</a>
               <a href="#">وبلاگ</a>
             </nav>
-            <img src="image/6-07.png" class="foot1 img-responsive" />
           </div>
           <div
             class="col col-lg-offset-2 col-lg-2 col-xl-offset-2 col-xl-2 col-md-offset-9 col-md-3 col-sm-offset-8 col-sm-4"
           >
-            <img src="image/8-07.png" class="call" />
+            <!-- <img src="image/8-07.png" class="call" />
             <p class="num">
               &#1778;&#1778; &#1776;&#1777; &#1784;&#1780; &#1781;&#1778;
             </p>
-            <p class="txt">مشاوره رایگان</p>
+            <p class="txt">مشاوره رایگان</p> -->
+            <img src="./image/telephone.svg" class="telephone-svg" />
           </div>
         </div>
       </div>
@@ -515,6 +523,6 @@
         }
       });
     </script>
-
+    <script src="./js/mouse.js"></script>
   </body>
 </html>
