@@ -176,7 +176,7 @@ body {
 .footItem {
   position: absolute;
   /* border: 2px solid navy; */
-  bottom: 1.5em;
+  bottom: 4vh;
   left: 2rem;
   right: 2rem;
 }
@@ -184,8 +184,8 @@ body {
   text-decoration: none;
   color: white;
   font-family: Yekan;
-  font-size: 12px;
-  margin: 8px;
+  font-size: 0.9vw;
+  margin: 1.2vh 0.58vw;
 }
 .footItem a:hover,
 a:active {
@@ -214,9 +214,13 @@ a:active {
 }
 .telephone-svg {
   /* border: #f56c6c 2px solid; */
-  transform-origin: top;
-  transform: scale(0.6);
+  /* transform-origin: top; */
+  /* transfo: scale(0.4); */
+  width: 8.5vw;
+  height: 17vh;
   position: absolute;
+  right: 3em;
+  top: -6vh;
 }
 .mouse {
   /* background: #e26d06; */
@@ -282,7 +286,7 @@ a:active {
 .about a {
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 1vw;
   font-family: Yekan;
 }
 .about a:hover,
