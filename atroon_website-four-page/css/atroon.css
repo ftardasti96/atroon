@@ -934,3 +934,100 @@ body {
   background: url(../img/Links/hover/08.jpg);
   background-size: contain;
 }
+#s6_img_1{
+  width: 5.661786VW;
+  height: 5.954612VW;
+  margin-top: 25%;
+  margin-left: 20%;
+}
+#s6_img_2{
+  width: 9.591508VW;
+  height: 16.229868VW;
+  margin-top: 41%;
+  margin-left: 28%;
+}
+#s6_img_3{
+  width: 11.569546VW;
+  height: 20.795022VW;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+#s6_img_4{
+  width: 5.029283VW;
+  height: 5.395315VW;
+  margin-top: 30%;
+  margin-left: 50%;
+}
+#s6_img_5{
+  position: absolute;
+  width: 12.693997VW;
+  height: 10.253294VW;
+  right: 0;
+  bottom: 0;
+}
+#plntRow{
+  margin-top: 30%;
+}
+.planets{
+  position: relative;
+  width:18.301610541727673VW;
+  height:18.301610541727673VW;
+  padding: 1.0980966325036603VW;
+}
+.btnPlanets{
+  width: 9.150805VW;
+  height: 3.17429VW;
+  margin-top: 10%;
+  margin-left: 31%;
+  background-color: transparent;
+  border: #ceb06b solid 1px;
+  border-radius: 30px;
+  font-family: RegYekan;
+  font-size: 1.7301610541727673VW;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ceb06b;
+}
+.price{
+  font-family: RegYekan;
+  font-size: 0.8784773060029283VW;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 0.17569546120058563VW;
+  line-height: 1.4641288433382138VW;
+  text-align: center;
+  color: #ceb06b;
+  margin-left: 23%;
+}
+.planetCard{
+  position: absolute;
+  width:16.105417276720353VW;
+  height:23.42606149341142VW;
+  opacity: 0;
+  background-color: #030c09;
+  margin-top: -88%;
+  padding:1.0980966325036603VW;
+}
+@keyframes planetCardOn {
+  0%   {position: absolute;margin-top: 70%;opacity: 0 ;  height:0VW;}
+  100%   {position: absolute;margin-top: -88%;opacity: 0.5 ; height:23.42606149341142VW;}
+
+}
+@keyframes planetCardOff {
+  0%   {position: absolute;margin-top: -88%;opacity: 0.5 ;height:23.42606149341142VW;}
+  100%   {position: absolute;margin-top: 70%;;opacity: 0 ; height:0VW;}
+}
+.planetCard p {
+  font-family: RegYekan;
+  text-align: justify;
+  text-align-last: right;
+  padding: 1.4641288433382138VW;
+  font-size: 0.7320644216691069VW;
+  color: #808285;
+  padding-top: 3.6603221083455346VW;
+}
