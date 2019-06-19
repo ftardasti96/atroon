@@ -104,8 +104,7 @@ body {
   background: #030c09;
 }
 .section1 {
-  /* background: #030c09; */
-  background: #f56c6c;
+  background: #030c09;
 }
 .section2 {
   background: linear-gradient(#0e2f24, #000101);
@@ -250,7 +249,7 @@ a:active {
   opacity: 0.4;
 }
 .l {
-  width: 12em;
+  width: 14.2vw;
   background: rgb(0, 1, 1, 0.4);
   position: absolute;
   right: 0;
@@ -264,7 +263,7 @@ a:active {
   font-size: 12px;
   font-family: MyriadLight;
   color: white;
-  padding: 0.125em 0.3em;
+  padding: 0.125em 0.4vw;
 }
 .l a:hover,
 a:active {
@@ -274,7 +273,7 @@ a:active {
 .on {
   /* background: orange; */
   text-align: end;
-  margin-right: 3em;
+  margin-right: 4em;
   z-index: 170;
 }
 .about {
@@ -545,7 +544,7 @@ button:active {
 
 .p1{
   color: #ceb06b;
-  font-size: 1.6em;
+  font-size: 1.6vw;
   font-family: YekanBold;
   /* position: absolute;
   top: 50px; */
@@ -556,7 +555,7 @@ button:active {
   font-family: RegYekan;
   text-align: justify;
   color: #808285;
-  font-size: 1em;
+  font-size: 1vw;
   /* margin-top: 3%; */
   padding: 0 15%;
   text-align-last: right;
