@@ -104,7 +104,8 @@ body {
   background: #030c09;
 }
 .section1 {
-  background: #030c09;
+  /* background: #030c09; */
+  background: #f56c6c;
 }
 .section2 {
   background: linear-gradient(#0e2f24, #000101);
@@ -169,7 +170,7 @@ body {
 .foot1 {
   width: 100%;
   /* border: 2px solid navy; */
-  box-sizing: content-box;
+  /* box-sizing: content-box; */
 }
 
 .footItem {
@@ -210,6 +211,12 @@ a:active {
   position: absolute;
   top: -4em;
   right: 0;
+}
+.telephone-svg {
+  /* border: #f56c6c 2px solid; */
+  transform-origin: top;
+  transform: scale(0.6);
+  position: absolute;
 }
 .mouse {
   /* background: #e26d06; */
