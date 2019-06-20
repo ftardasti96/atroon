@@ -48,9 +48,4 @@ function whyUs_on(){
   document.getElementById("whyUsTitle").style.animation= "whyUsTitle_on 2s 1  forwards ";
   document.getElementById("whyUsDes").style.animation= "whyUsDes_on 2s 1  forwards ";
 }
-function whyUs_off(){
-  document.getElementById("ship5").style.animation= "whyUsShip_off 2s 1  forwards ";
-  document.getElementById("whyUsTitle").style.animation= "whyUsTitle_off 2s 1  forwards ";
-  document.getElementById("whyUsDes").style.animation= "whyUsDes_off 2s 1  forwards ";
-}
 
