@@ -48,4 +48,7 @@ function whyUs_on(){
   document.getElementById("whyUsTitle").style.animation= "whyUsTitle_on 2s 1  forwards ";
   document.getElementById("whyUsDes").style.animation= "whyUsDes_on 2s 1  forwards ";
 }
+function advantages(){
+  document.getElementById("rightTeil").style.animation= "rightTeil 2s 1  forwards ";
+}
 

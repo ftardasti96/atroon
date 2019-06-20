@@ -431,8 +431,13 @@ a:active {
   /* border: #f56c6c 2px solid; */
   width: fit-content;
   position: absolute;
-  top: 35%;
+  top: 0%;
   right: 0;
+  opacity: 0;
+}
+@keyframes rightTeil {
+  0% {top: 0%;opacity: 0;}
+  100% {top: 35%;opacity: 1;}
 }
 
 .right1 {
