@@ -43,4 +43,12 @@ function planetMouse_off_ruby(){
 function planetMouse_off_venus(){
   document.getElementById("venus").style.animation= "planetCardOff 2s 1  forwards ";
 }
+function whyUs_on(){
+  document.getElementById("ship5").style.animation= "whyUsShip_on 2s 1  forwards ";
+  document.getElementById("whyUsTitle").style.animation= "whyUsTitle_on 2s 1  forwards ";
+  document.getElementById("whyUsDes").style.animation= "whyUsDes_on 2s 1  forwards ";
+}
+function advantages(){
+  document.getElementById("rightTeil").style.animation= "rightTeil 2s 1  forwards ";
+}
 
