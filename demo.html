@@ -522,18 +522,19 @@
       </div>
     </div>
 
-    <script src="./js/lib/jquery-3.4.1.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/scirpt.js"></script>
-    <script src="./src/jquery.fsscroll.js"></script>
+    <script src="js/lib/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scirpt.js"></script>
+    <script src="src/jquery.fsscroll.js"></script>
     <script src="js/lib/three.min.js"></script>
     <script src="js/lib/renderers/Projector.js"></script>
     <script src="js/lib/controls/OrbitControls.js"></script>
     <script src="js/lib/stats.min.js"></script>
     <script src="js/lib/WebGL.js"></script>
-    <!-- <script src="js/planet.js"></script> -->
     <script src="js/lib/three.interaction.js"></script>
+    <script src="js/planet.js"></script>
     <script>
+      var planetIndex = 6;
       var title = ['خانه','درباره‌ما','مزایا','برتر','تکنیک‌ها','نمونه‌کارها','لیست‌قیمت','تماس‌با‌ما'];
       $(".container2").fsScroll({
         keyboard: true,
@@ -541,6 +542,11 @@
 
         beforeScroll: function(el, index) {
           $(".textEvent").text(title[index]);
+          if (index == 6){
+            document.enablePlanet();
+          } else {
+            document.disablePlanet();
+          }
         },
 
         afterScroll: function(el, index) {
