@@ -1,14 +1,14 @@
 var planetsAnimation = [];
 var planetStatus = false;
 
-document.enablePlanet = function () {
+window.enablePlanet = function () {
   planetStatus = true;
   for (let i = 0; i < planetsAnimation.length; i++) {
     planetsAnimation[i]();
   }
 }
 
-document.disablePlanet = function () {
+window.disablePlanet = function () {
   planetStatus = false;
 }
 
@@ -165,6 +165,9 @@ $(document).ready(function () {
 
   function onWindowResize() {
     for (let i = 0; i < views.length; i++) {
+      views[i].width = $(views[i].id).width();
+      views[i].height = $(views[i].id).height();
+
       views[i].camera.aspect = views[i].width / views[i].height;
       views[i].camera.updateProjectionMatrix();
       views[i].renderer.setSize(views[i].width, views[i].height);
