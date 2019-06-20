@@ -1,24 +1,34 @@
-$(document).ready(function() {
-  if (WEBGL.isWebGLAvailable() === false) {
-    document.body.appendChild(WEBGL.getWebGLErrorMessage());
+var planetsAnimation = [];
+var planetStatus = false;
+
+window.enablePlanet = function () {
+  planetStatus = true;
+  for (let i = 0; i < planetsAnimation.length; i++) {
+    planetsAnimation[i]();
   }
+}
 
+window.disablePlanet = function () {
+  planetStatus = false;
+}
+
+$(document).ready(function () {
   var debug = false;
-
-  var loader = new THREE.TextureLoader();
-
   var views = [];
   var cameraPosition = 1330;
-
-  init("#view1", "img/MARS texture.jpg", { x: 0, y: 0, z: 0 }, 0xffffff);
-  init("#view2", "img/RUBY texture.jpg", { x: 0, y: 0, z: 0 }, 0xfca22b);
-  init("#view3", "img/VENUS texture.jpg", { x: 0, y: 0, z: 0 }, 0xffffff);
+  if (WEBGL.isWebGLAvailable() === true) {
+    var loader = new THREE.TextureLoader();
+    planetsAnimation.push(init("#view1", "img/MARS texture.jpg", { x: 0, y: 0, z: 0 }, 0xffffff));
+    planetsAnimation.push(init("#view2", "img/RUBY texture.jpg", { x: 0, y: 0, z: 0 }, 0xfca22b));
+    planetsAnimation.push(init("#view3", "img/VENUS texture.jpg", { x: 0, y: 0, z: 0 }, 0xffffff));
+  }
 
   window.addEventListener("resize", onWindowResize, false);
 
+
   function createMesh(textureName, position, mouseoutEvent, mouseoverEvent) {
-    return new Promise(function(resolve, reject) {
-      loader.load(textureName, function(texture) {
+    return new Promise(function (resolve, reject) {
+      loader.load(textureName, function (texture) {
         var geometry = new THREE.SphereBufferGeometry(450, 100, 100);
         var material = new THREE.MeshPhongMaterial({
           map: texture,
@@ -54,7 +64,7 @@ $(document).ready(function() {
     var camera = new THREE.PerspectiveCamera(40, width / height, 1, 4000);
     camera.position.set(0, 0, cameraPosition);
 
-    var render = function() {
+    var render = function () {
       renderer.render(scene, camera);
     };
 
@@ -70,13 +80,13 @@ $(document).ready(function() {
     createMesh(
       textureName,
       position,
-      function(ev) {
+      function (ev) {
         controls.autoRotate = false;
       },
-      function(ev) {
+      function (ev) {
         controls.autoRotate = true;
       }
-    ).then(function(mesh) {
+    ).then(function (mesh) {
       scene.add(mesh);
       render();
     });
@@ -144,16 +154,20 @@ $(document).ready(function() {
     views.push(view);
     render();
 
-    var animate = function() {
+    var animate = function () {
       controls.update();
       render();
-      requestAnimationFrame(animate);
+      if (planetStatus)
+        requestAnimationFrame(animate);
     };
-    animate();
+    return animate;
   }
 
   function onWindowResize() {
     for (let i = 0; i < views.length; i++) {
+      views[i].width = $(views[i].id).width();
+      views[i].height = $(views[i].id).height();
+
       views[i].camera.aspect = views[i].width / views[i].height;
       views[i].camera.updateProjectionMatrix();
       views[i].renderer.setSize(views[i].width, views[i].height);
