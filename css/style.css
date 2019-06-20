@@ -721,3 +721,100 @@ button:active {
   margin-left: 2.2vw;
   margin-top: 4.5vh;
 }
+.fancy {
+  line-height: 0.5;
+  text-align: end;
+}
+.fancy span {
+  /* display: inline-block; */
+  position: absolute;  
+}
+.fancy span:after {
+  content: "";
+  position: absolute;
+  /* height: 2px; */
+  border-bottom: 1px solid white;
+  /* border-top: 1px solid white; */
+  /* top: 0; */
+  width: 200px;
+}
+.fancy span:after {
+  right: 100%;
+  /* margin-left: 15px; */
+}
+.rightLine {
+  border: #ceb06b 1px solid;
+  width:22.5em;
+  text-align: left;
+  display:inline-block;
+}
+.leftLine {
+  border: #ceb06b 1px solid;
+  display:inline-block;
+  width:25.3em
+}
+.oneSec7{
+  z-index: 1;
+  height: -webkit-fill-available;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit:cover; 
+}
+
+.twoSec7 {
+  z-index: 2;
+  height: -webkit-fill-available;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* opacity: 0; */
+  animation: blink 7s infinite;
+  object-fit:cover;
+}
+@keyframes blink{
+  0% {opacity: 0;}
+  50% {opacity: 1;}
+  100% {opacity: 0;}
+}
+.firstSec7 {
+  width: 100%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  height: 100%;
+}
+.txtSec7 {
+  position: absolute;
+  z-index: 4;
+  color: #808285;
+  font-family: RegYekan;
+  /* font-size: 10px; */
+  top: 34%;
+  text-align: right;
+  padding-right: 6.5%;
+  /* border: coral solid 2px; */
+  font-style: normal;
+font-stretch: normal;
+line-height: 1.25;
+letter-spacing: -0.4px;
+font-size: 0.75em;
+font-weight: 300;
+  /* width: 40%; */
+}
+.navSec7 nav {
+  display: flexbox;
+  flex-direction: row;
+}
+.navSec7 nav hr {
+  /* display: inline; */
+  border: 1px solid #ceb06b;
+  width: 114px;
+/* height: 2px; */
+}
+.navSec7 a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
