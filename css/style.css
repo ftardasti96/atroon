@@ -107,6 +107,9 @@ body {
 .section1 {
   background: #030c09;
   /* background: olive; */
+  background-image: url("../image/STARS.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 .section2 {
   background: linear-gradient(#0e2f24, #000101);
@@ -593,7 +596,10 @@ button:active {
   cursor: pointer;
   transform: scale(1.1);
 }
-
+.backSec1 {
+  width: 100%;
+  z-index: 1;
+}
 .p1 {
   color: #ceb06b;
   font-size: 1.6vw;
@@ -601,6 +607,7 @@ button:active {
   /* position: absolute;
   top: 50px; */
   margin-top: 5em;
+  z-index: 2;
 }
 .p2 p {
   direction: rtl;
@@ -637,6 +644,10 @@ button:active {
 .sec3-total {
   margin-top: 17%;
 }
+@keyframes sec3Anim {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 .p1-sec3 {
   color: #ceb06b;
   font-size: 1.6vw;
@@ -653,23 +664,25 @@ button:active {
   text-align: justify;
   color: #808285;
   font-size: 1vw;
-  padding-left: 15%;
+  /* padding-left: 15%; */
 }
 .sec3 img {
   /* margin-top: 70%; */
-  width: 100%;
-  height: auto;
-  padding: 0 15% 5% 0;
+  width: 13.3vw;
+  height: 30.5vh;
+  /* padding: 0 15% 5% 0; */
   /* border: purple 2px solid; */
 }
 .img-sec3 img {
   width: 100%;
   height: auto;
-  padding-left: 20%;
+  /* padding-left: 15%; */
   margin-top: 10%;
 }
 .b-sec3 {
-  padding: 10% 15% 5% 0;
+  /* padding: 10% 15% 5% 0; */
+  text-align: center;
+  margin-top: 10%; 
 }
 .b-sec3 button {
   background-color: transparent;
