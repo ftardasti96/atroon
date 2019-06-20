@@ -141,7 +141,7 @@
               class="back-to-top"
               style="position: absolute;width: 20px;height: 10px;"
             >
-              <img src="./image/flesh.svg" type="">
+              <img src="./image/flesh.svg" type="" />
             </a>
           </div>
         </div>
@@ -236,14 +236,14 @@
             </div>
           </div>
           <div class="flesh" style="border: tomato 2px solid">
-              <a
-                href="/collaborate/atroon/atroon_website-four-page/demo.html"
-                class="back-to-top"
-                style="position: absolute;width: 20px;height: 10px;"
-              >
-                <img src="./image/flesh.svg" type="">
-              </a>
-            </div>
+            <a
+              href="/collaborate/atroon/atroon_website-four-page/demo.html"
+              class="back-to-top"
+              style="position: absolute;width: 20px;height: 10px;"
+            >
+              <img src="./image/flesh.svg" type="" />
+            </a>
+          </div>
         </div>
         <div class="section section3">
           <div class="container">
@@ -372,7 +372,7 @@
                     </p>
                   </div>
                   <div
-                  class="planets"
+                    class="planets"
                     onmouseover="planetMouse_on_mars()"
                     onmouseout="planetMouse_off_mars()"
                     id="view1"
@@ -381,15 +381,16 @@
                   <h5 class="price">240.000.000 Rial</h5>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <div style="margin-left:15px;" id="ruby" class="planetCard">
-                        <p dir="rtl">
-                          شما برای پیاده سازی ایده های نو و پیشرو نیاز به یک راهنمای
-                          مناسب دارید. آترون با تکیه بر تیم فوق تخصصی خود، این مسیر
-                          را هموار و شما را در این مهم یاری خواهد کرد.
-                        </p>
-                      </div>
+                  <div style="margin-left:15px;" id="ruby" class="planetCard">
+                    <p dir="rtl">
+                      شما برای پیاده سازی ایده های نو و پیشرو نیاز به یک راهنمای
+                      مناسب دارید. آترون با تکیه بر تیم فوق تخصصی خود، این مسیر
+                      را هموار و شما را در این مهم یاری خواهد کرد.
+                    </p>
+                  </div>
                   <div
-                  onmouseover="planetMouse_on_ruby()" onmouseout="planetMouse_off_ruby()"
+                    onmouseover="planetMouse_on_ruby()"
+                    onmouseout="planetMouse_off_ruby()"
                     id="view2"
                     class="planets"
                   ></div>
@@ -397,18 +398,19 @@
                   <h5 class="price">1.000.000.000 Rial</h5>
                 </div>
                 <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                    <div style="margin-left:15px;" id="venus" class="planetCard" >
-                        <p dir="rtl">
-                          وبسایت شرکتی یک پلت فرم در فضای آنلاین است که شما می
-                          توانید با استفاده از امکانات آن از قبیل: معرفی شرکت، معرفی
-                          خدمات و محصولات، گالری تصاویر، صفحه تماس و ... به راحتی و
-                          بدون محدودیت جغرافیایی، در راستای اهداف سازمان خود گام
-                          بردارید.
-                        </p>
-                      </div>
+                  <div style="margin-left:15px;" id="venus" class="planetCard">
+                    <p dir="rtl">
+                      وبسایت شرکتی یک پلت فرم در فضای آنلاین است که شما می
+                      توانید با استفاده از امکانات آن از قبیل: معرفی شرکت، معرفی
+                      خدمات و محصولات، گالری تصاویر، صفحه تماس و ... به راحتی و
+                      بدون محدودیت جغرافیایی، در راستای اهداف سازمان خود گام
+                      بردارید.
+                    </p>
+                  </div>
                   <div
                     id="view3"
-                    onmouseover="planetMouse_on_venus()" onmouseout="planetMouse_off_venus()"
+                    onmouseover="planetMouse_on_venus()"
+                    onmouseout="planetMouse_off_venus()"
                     class="planets"
                   ></div>
                   <button class="btnPlanets">VENUS</button>
@@ -520,6 +522,9 @@
           </div>
         </div>
       </div>
+      <div class="textEventContainer container">
+        <h5 class="textEvent">خانه</h5>
+      </div>
     </div>
 
     <script src="./js/lib/jquery-3.4.1.min.js"></script>
@@ -534,7 +539,15 @@
     <!-- <script src="js/planet.js"></script> -->
     <script src="js/lib/three.interaction.js"></script>
     <script>
-      var title = ['خانه','درباره‌ما','مزایا','برتر','تکنیک‌ها','نمونه‌کارها','لیست‌قیمت','تماس‌با‌ما'];
+      var title = [
+        "خانه",
+        "درباره‌ما",
+        "مزایا",
+        "برتر",
+        "تکنیک‌ها",
+        "نمونه‌کارها",
+        "لیست‌قیمت"
+      ];
       $(".container2").fsScroll({
         keyboard: true,
         loop: true,
@@ -544,7 +557,7 @@
         },
 
         afterScroll: function(el, index) {
-          el.find("h1").removeClass();
+          $(".myText").text(title[index]);
         }
       });
     </script>

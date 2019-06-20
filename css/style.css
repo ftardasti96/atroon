@@ -24,14 +24,14 @@
 }
 
 [data-fs-scroll] .page {
-  left: 2em;
+  left: 2vw;
   top: 40.22%;
   position: fixed;
   list-style: none;
   background: rgb(0, 1, 1, 0.4);
   border-radius: 25px;
   height: fit-content;
-  padding: 0% 0.3%;
+  padding: 0.5% 0.3% 0.5%;
   width: 1.55%;
   z-index: 12;
 }
@@ -102,9 +102,12 @@ body {
 .section0 {
   /* background: linear-gradient(#0e2f24, #000101); */
   background: #030c09;
+  /* background: #f56c6c; */
 }
 .section1 {
   background: #030c09;
+  /* background: olive; */
+
 }
 .section2 {
   background: linear-gradient(#0e2f24, #000101);
@@ -677,8 +680,25 @@ button:active {
   border-radius: 20px;
   /* margin-top: 2em; */
 }
+.textEventContainer {
+  width: 100%;
+  /* height: fit-content; */
+  position: absolute;
+  /* text-align: start; */
+  /* right: 0; */
+  /* left: 1%; */
+  top: 35%;
+  height: 35px;
+  /* border: 3px solid navy; */
+  margin: 0%;
+  padding: 0%;
+}
 .textEvent {
   font-family: RegYekan;
   font-size: 0.8vw;
+  position: absolute;
+  transform-origin: top left;
   transform: rotate(270deg);
+  margin-left: 2.2vw;
+  margin-top: 4.5vh;
 }
