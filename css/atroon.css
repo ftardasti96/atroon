@@ -834,7 +834,16 @@ body {
   font-stretch: normal;
   line-height: 4.24;
   letter-spacing: normal;
-  margin-top: 30%;
+  margin-top: 0%;
+  opacity: 0;
+}
+@keyframes whyUsTitle_on {
+  0%   {opacity: 0;margin-top: 0%;}
+  100%   {opacity:1;margin-top: 30%;}
+}
+@keyframes whyUsTitle_ff {
+  0%   {opacity: 1;margin-top: 30%;}
+  100%   {opacity:0;margin-top: 0%;}
 }
 .whyUsDes {
   font-family: RegYekan;
@@ -847,6 +856,15 @@ body {
   text-align: justify;
   color: #808285;
   text-align-last: right;
+  opacity: 0;
+}
+@keyframes whyUsDes_on {
+  0%   {opacity: 0;margin-top:-10%;}
+  100%   {opacity:1;margin-top: 0%;}
+}
+@keyframes whyUsDes_off {
+  0%   {opacity: 1;margin-top: -10%;}
+  100%   {opacity:0;margin-top: 0%;}
 }
 .listItem {
   width: 1.3vw;
@@ -1034,5 +1052,13 @@ body {
 #ship5{
   width:100%;
   margin-top: 20%;
-  opacity:1 ;
+  opacity:0 ;
+}
+@keyframes whyUsShip_on {
+  0%   {opacity: 0;}
+  100%   {opacity:1}
+}
+@keyframes whyUsShip_off {
+  0%   {opacity: 1;}
+  100%   {opacity:0}
 }
