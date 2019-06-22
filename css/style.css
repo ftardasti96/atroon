@@ -129,7 +129,10 @@ body {
 .myBorder {
   border: #f56c6c 2px sold;
 }
-
+.p1 .text-animate {
+  left: 0px;
+  transform: translateX(-100%);
+}
 .second {
   width: 100%;
   position: absolute;
@@ -431,7 +434,7 @@ a:active {
 .rightTeil {
   z-index: 10;
   /* margin-right: 80%; */
-  border: #f56c6c 2px solid;
+  /* border: #f56c6c 2px solid; */
   width: fit-content;
   position: absolute;
   top: 0%;
@@ -669,6 +672,7 @@ button:active {
   text-align: justify;
   color: #808285;
   font-size: 1vw;
+  margin-top: 3vh;
   /* padding-left: 15%; */
 }
 .sec3 img {
@@ -678,11 +682,14 @@ button:active {
   /* padding: 0 15% 5% 0; */
   /* border: purple 2px solid; */
 }
+.img-sec3 {
+  /* margin-top: 5vh; */
+}
 .img-sec3 img {
   width: 100%;
   height: auto;
   /* padding-left: 15%; */
-  margin-top: 10%;
+  /* margin-top: 13vh; */
 }
 .b-sec3 {
   /* padding: 10% 15% 5% 0; */
