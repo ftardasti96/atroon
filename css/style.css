@@ -129,10 +129,6 @@ body {
 .myBorder {
   border: #f56c6c 2px sold;
 }
-.p1 .text-animate {
-  left: 0px;
-  transform: translateX(-100%);
-}
 .second {
   width: 100%;
   position: absolute;
@@ -439,12 +435,12 @@ a:active {
   position: absolute;
   top: 0%;
   right: 0;
-  opacity: 0;
+  /* opacity: 0; */
 }
-@keyframes rightTeil {
+/* @keyframes rightTeil {
   0% {top: 0%;opacity: 0;}
   100% {top: 35%;opacity: 1;}
-}
+} */
 
 .right1 {
   text-align: center;
@@ -616,6 +612,7 @@ button:active {
   top: 50px; */
   margin-top: 5em;
   z-index: 2;
+  /* opacity: 0; */
 }
 .p2 p {
   direction: rtl;
@@ -653,8 +650,12 @@ button:active {
   margin-top: 17%;
 }
 @keyframes sec3Anim {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .p1-sec3 {
   color: #ceb06b;
@@ -694,7 +695,7 @@ button:active {
 .b-sec3 {
   /* padding: 10% 15% 5% 0; */
   text-align: center;
-  margin-top: 10%; 
+  margin-top: 10%;
 }
 .b-sec3 button {
   background-color: transparent;
@@ -734,7 +735,7 @@ button:active {
 }
 .fancy span {
   /* display: inline-block; */
-  position: absolute;  
+  position: absolute;
 }
 .fancy span:after {
   content: "";
@@ -751,23 +752,23 @@ button:active {
 }
 .rightLine {
   border: #ceb06b 1px solid;
-  width:22.5em;
+  width: 22.5em;
   text-align: left;
-  display:inline-block;
+  display: inline-block;
 }
 .leftLine {
   border: #ceb06b 1px solid;
-  display:inline-block;
-  width:25.3em
+  display: inline-block;
+  width: 25.3em;
 }
-.oneSec7{
+.oneSec7 {
   z-index: 1;
   height: -webkit-fill-available;
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  object-fit:cover; 
+  object-fit: cover;
 }
 
 .twoSec7 {
@@ -779,12 +780,18 @@ button:active {
   left: 0;
   /* opacity: 0; */
   animation: blink 7s infinite;
-  object-fit:cover;
+  object-fit: cover;
 }
-@keyframes blink{
-  0% {opacity: 0;}
-  50% {opacity: 1;}
-  100% {opacity: 0;}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 .firstSec7 {
   width: 100%;
@@ -804,11 +811,11 @@ button:active {
   padding-right: 6.5%;
   /* border: coral solid 2px; */
   font-style: normal;
-font-stretch: normal;
-line-height: 1.25;
-letter-spacing: -0.4px;
-font-size: 0.75em;
-font-weight: 300;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  font-size: 0.75em;
+  font-weight: 300;
   /* width: 40%; */
 }
 .navSec7 nav {
@@ -819,9 +826,22 @@ font-weight: 300;
   /* display: inline; */
   border: 1px solid #ceb06b;
   width: 114px;
-/* height: 2px; */
+  /* height: 2px; */
 }
 .navSec7 a:hover {
   cursor: pointer;
   text-decoration: none;
+}
+.section h1 {
+  position: absolute;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  font-size: 40px;
+  transition: all 3s ease;
+}
+.section h1.text-animate {
+  /* left: 10px; */
+  opacity: 0;
+  /* transform: translateX(-100%); */
 }
