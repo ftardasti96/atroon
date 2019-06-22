@@ -431,7 +431,7 @@ a:active {
 .rightTeil {
   z-index: 10;
   /* margin-right: 80%; */
-  border: #f56c6c 2px solid;
+  /* border: #f56c6c 2px solid; */
   width: fit-content;
   position: absolute;
   top: 0%;
