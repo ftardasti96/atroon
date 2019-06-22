@@ -1178,6 +1178,7 @@ body {
   background-color: #030c09;
   margin-top: -88%;
   padding:1.0980966325036603VW;
+  margin-left: 1%;
 }
 @keyframes planetCardOn {
   0%   {position: absolute;margin-top: 70%;opacity: 0 ;  height:0VW;}
