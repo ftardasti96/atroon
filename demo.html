@@ -73,6 +73,12 @@
         </div>
         <div class="section section1">
           <div class="container">
+            <div>
+              <canvas
+              id="about-particle"
+              style="position: absolute"
+              ></canvas>
+            </div>
             <div class="row sec1-r1">
               <div class="col-lg-12 text-center">
                 <p class="p1">درباره آترون</p>
@@ -629,7 +635,6 @@
     <script src="js/lib/renderers/Projector.js"></script>
     <script src="js/lib/controls/OrbitControls.js"></script>
     <script src="js/lib/stats.min.js"></script>
-    <script src="js/lib/WebGL.js"></script>
     <script src="js/lib/three.interaction.js"></script>
     <script src="js/planet.js"></script>
     <script>
@@ -694,5 +699,9 @@
         s.parentNode.insertBefore(ga, s);
       })();
     </script>
+    <script src="js/lib/stopExecutionOnTimeout.js"></script>
+    <script src="js/lib/p5.min.js"></script>
+    <script src="js/lib/pixi.min.js"></script>
+    <script src="js/about-particle.js"></script>
   </body>
 </html>
