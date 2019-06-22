@@ -685,6 +685,8 @@ button:active {
 }
 .img-sec3 {
   /* margin-top: 5vh; */
+  width: 100%;
+  height: auto;
 }
 .img-sec3 img {
   width: 100%;
@@ -692,12 +694,12 @@ button:active {
   /* padding-left: 15%; */
   /* margin-top: 13vh; */
 }
-.b-sec3 {
-  /* padding: 10% 15% 5% 0; */
+/* .b-sec3 {
+  padding: 10% 15% 5% 0;
   text-align: center;
   margin-top: 10%;
-}
-.b-sec3 button {
+} */
+.b-sec3  {
   background-color: transparent;
   color: #ceb06b;
   font-family: Yekan;
@@ -705,7 +707,13 @@ button:active {
   border: #ceb06b solid 2px;
   padding: 3px 1em;
   border-radius: 20px;
+  text-align: center;
+  display: block;
+  margin: auto;
   /* margin-top: 2em; */
+}
+.sec3Total {
+  margin-top: 30vh;
 }
 .textEventContainer {
   width: 100%;
