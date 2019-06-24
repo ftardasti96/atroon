@@ -1,23 +1,4 @@
-@font-face {
-  font-family: MyriadPro;
-  src: url("../font/English font/MyriadPro-Regular.otf");
-}
-@font-face {
-  font-family: MyriadLight;
-  src: url("../font/English font/MyriadPro-LightSemiExt.otf");
-}
-@font-face {
-  font-family: Yekan;
-  src: url("../font/Persian font/IRANYekanLight.ttf");
-}
-@font-face {
-  font-family: RegYekan;
-  src: url("../font/Persian font/IRANYekanRegular.ttf");
-}
-@font-face {
-  font-family: YekanBold;
-  src: url("../font/Persian font/IRANYekanBold.ttf");
-}
+
 /* plugin css */
 [data-fs-scroll] {
   position: relative;
@@ -139,8 +120,8 @@ body {
   height: 50px;
   /*border: 3px solid navy;*/
 }
-.logo {
-  /* border: 3px solid navy; */
+/* .logo {
+  border: 3px solid navy;
   position: absolute;
   top: 4.4vh;
   text-align: start;
@@ -150,8 +131,8 @@ body {
   height: 5.78vh;
   position: inherit;
   left: 2em;
-  /* border: 3px solid navy; */
-}
+  border: 3px solid navy; 
+}*/
 .logo-sm {
   /* border: 3px solid navy; */
   position: absolute;
@@ -164,15 +145,6 @@ body {
   position: inherit;
   left: 2em;
   /* border: 3px solid navy; */
-}
-.three {
-  width: 100%;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 20;
-  /* border: 2px solid navy; */
 }
 
 .num,
@@ -196,16 +168,16 @@ body {
   top: -4em;
   right: 0;
 }
-.telephone-svg {
-  /* border: #f56c6c 2px solid; */
-  /* transform-origin: top; */
-  /* transfo: scale(0.4); */
+/* .telephone-svg {
+  border: #f56c6c 2px solid;
+  transform-origin: top;
+  transfo: scale(0.4);
   width: 8.5vw;
   height: 17vh;
   position: absolute;
   right: 3em;
   top: -6vh;
-}
+} */
 .flesh-container {
   /* width: 30%; */
   /* height: auto; */
