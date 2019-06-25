@@ -102,7 +102,7 @@ body {
 }
 .section0 {
   /* background: linear-gradient(#0e2f24, #000101); */
-  background: #030c09;
+  background: #000; 
   /* background: #f56c6c; */
 }
 .section1 {
@@ -113,19 +113,22 @@ body {
   background-size: 100%;
 }
 .section2 {
-  background: linear-gradient(#0e2f24, #000101);
+  background: linear-gradient(#0e2f24, #000);
 }
 .section3 {
-  background: #030c09;
+  background: #000;
 }
 .section4 {
-  background: #030c09;
+  background: #000;
 }
 .section5 {
-  background: #030c09;
+  background: #000;
 }
 .section6 {
   background-image: linear-gradient(50deg, #06070a, #38404a 50%, #727f8f);
+}
+.section7 {
+  background: #000;
 }
 .myBorder {
   border: #f56c6c 2px sold;

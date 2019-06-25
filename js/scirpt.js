@@ -45,7 +45,7 @@ function planetMouse_off_venus(){
 }
 function whyUs_on(){
   document.getElementById("ship5").style.animation= "whyUsShip_on 2s 1  forwards ";
-  document.getElementById("whyUsTitle").style.animation= "whyUsTitle_on 2s 1  forwards ";
+  // document.getElementById("whyUsTitle").style.animation= "whyUsTitle_on 2s 1  forwards ";
   document.getElementById("whyUsDes").style.animation= "whyUsDes_on 2s 1  forwards ";
 }
 function advantages(){
