@@ -85,7 +85,7 @@
               </p>
             </div>
             <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 sec3Top">
-              <img src="./image/p4-img.png" style="width:100%" />
+              <img src="./image/p4-img.png" class="bartarLogo shine" />
             </div>
             <div class="col-2 col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
           </div>
@@ -93,10 +93,10 @@
             <div
               class="offset-2 col-5 offset-sm-1 col-sm-7 offset-md-2 col-md-5 offset-lg-3 col-lg-4 offset-xl-3 col-xl-4"
             >
-              <img src="./image/sec3-img.png" class="img-sec3" />
+              <img src="./image/Layer5Sec3.png" class="img-sec3" />
             </div>
             <div class="col-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 b-sec3">
-              <button>استعلام دامنه</button>
+              <button><span>استعلام دامنه</span></button>
             </div>
             <div class="col-2 col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
           </div>
@@ -159,14 +159,16 @@
               <h5 class="portfolioTitle">
                 نمونه کارها
               </h5>
-              <img id="sfOne" class="portfolioImg" alt="" />
-              <img id="sfTwo" class="portfolioImg" alt="" />
-              <img id="sfThree" class="portfolioImg" alt="" />
-              <img id="sfFour" class="portfolioImg" alt="" />
-              <img id="sfFive" class="portfolioImg" alt="" />
-              <img id="sfSix" class="portfolioImg" alt="" />
-              <img id="sfSeven" class="portfolioImg" alt="" />
-              <img id="sfEight" class="portfolioImg" alt="" />
+              <div class="portfolio">
+                <img id="sfOne" class="portfolioImg" alt="" />
+                <img id="sfTwo" class="portfolioImg" alt="" />
+                <img id="sfThree" class="portfolioImg" alt="" />
+                <img id="sfFour" class="portfolioImg" alt="" />
+                <img id="sfFive" class="portfolioImg" alt="" />
+                <img id="sfSix" class="portfolioImg" alt="" />
+                <img id="sfSeven" class="portfolioImg" alt="" />
+                <img id="sfEight" class="portfolioImg" alt="" />
+              </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-lg- 3 col-md-2 col-xl-2"></div>
           </div>
@@ -366,6 +368,7 @@
           $(".p1").animate({ opacity: 0 }, 200);
           $(".rightTeil").animate({ opacity: 0, top: 0 }, "swing");
           $(".textEvent").text(title[index]);
+          // $("#ship5").animate({ opacity: 0 }, 3000);
           if (index == 6) {
             window.enablePlanet();
           } else {
@@ -381,17 +384,8 @@
           $(".p1").animate({ opacity: 1 }, 200);
           $(".rightTeil").animate({ opacity: 1, top: "30vh" }, "swing");
           $("#whyUsTitle").animate({ opacity: 1, "margin-top": "30%" }, 1500);
-          $("#whyUsDes").animate({ opacity: 1, "margin-bottom": "10%" }, 1500);
+          $("#whyUsDes").animate({ opacity: 1, "margin-top": "10%" }, 1500);
           $("#ship5").animate({ opacity: 1 }, 3000);
-          $(".sec3Top img").animate(
-            { deg: 360 },
-            {
-              duration: 3200,
-              step: function(now) {
-                $(this).css({ transform: "rotateY(" + now + "deg)" });
-              }
-            }
-          );
         }
       });
     </script>
