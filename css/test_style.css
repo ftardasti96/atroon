@@ -113,6 +113,7 @@ a:active {
   text-align: justify;
   color: #939598;
   font-size: 0.878vw;
+  /* font-size: 0.7em; */
 }
 .myTxt7 {
   /* direction: rtl; */
@@ -145,7 +146,7 @@ button:active {
     font-size: 2.5vw;
   }
   .myTxt {
-    font-size: 2vw;
+    /* font-size: 1vw; */
   }
   .right3 button {
     font-size: 2vw;

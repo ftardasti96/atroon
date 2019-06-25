@@ -64,6 +64,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   background: #000;
+  min-width: 500px;
 }
 .first {
   width: 100%;

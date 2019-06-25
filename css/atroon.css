@@ -1022,8 +1022,11 @@ body {
 .portfolioImg {
   width: 16vw;
   height: 16vw;
-  margin-top: -15px;
-  border: #000000  1px;
+  margin-top: 0.76103500761035vh;
+  border: #000000  50px;
+}
+.portfolio {
+  margin-top: -1vh;
 }
 @media only screen and (min-width:2200px) and (max-height:1200px){
   .portfolioImg {
