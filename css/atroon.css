@@ -1170,6 +1170,7 @@ body {
   text-align: center;
   color: #ceb06b;
   margin-left: 23%;
+  margin-top: 1vh;
 }
 .planetCard{
   position: absolute;
@@ -1180,6 +1181,7 @@ body {
   margin-top: -88%;
   padding:1.0980966325036603VW;
   margin-left: 1%;
+  color: blue;
 }
 @keyframes planetCardOn {
   0%   {position: absolute;margin-top: 70%;opacity: 0 ;  height:0VW;}
@@ -1191,12 +1193,13 @@ body {
   100%   {position: absolute;margin-top: 70%;;opacity: 0 ; height:0VW;}
 }
 .planetCard p {
+  opacity: 1;
   font-family: RegYekan;
   text-align: justify;
   text-align-last: right;
   padding: 1.4641288433382138VW;
   font-size: 0.7320644216691069VW;
-  color: #808285;
+  color: white;
   padding-top: 3.6603221083455346VW;
 }
 #ship5{

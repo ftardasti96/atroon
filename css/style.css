@@ -63,7 +63,7 @@ body {
   height: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
-  background: darkcyan;
+  background: #000;
 }
 .first {
   width: 100%;
@@ -609,14 +609,14 @@ button:active {
 }
 .rightLine {
   border: #ceb06b 1px solid;
-  width: 22.5em;
+  width: 24.85em;
   text-align: left;
   display: inline-block;
 }
 .leftLine {
   border: #ceb06b 1px solid;
   display: inline-block;
-  width: 25.3em;
+  width: 19.68em;
 }
 .oneSec7 {
   z-index: 1;
@@ -675,14 +675,15 @@ font-size:0.951683748169839VW;
   font-weight: 300;
   /* width: 40%; */
 }
-.navSec7 nav {
+.navSec7 a {
   display: flexbox;
   flex-direction: row;
+  z-index: 5000;
 }
-.navSec7 nav hr {
-  /* display: inline; */
+.navSec7 hr {
+  display: inline;
   border: 1px solid #ceb06b;
-  width: 114px;
+  width: 10vw;
   /* height: 2px; */
 }
 .navSec7 a:hover {
@@ -701,4 +702,7 @@ font-size:0.951683748169839VW;
   /* left: 10px; */
   opacity: 0;
   /* transform: translateX(-100%); */
+}
+.footer7 {
+
 }
