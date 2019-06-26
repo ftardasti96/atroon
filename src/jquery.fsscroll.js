@@ -31,7 +31,7 @@
     /** 动画曲线 */
     timing: 'ease',
     /** 动画时间 */
-    duration: 500,
+    duration: 2500,
     /** 是否循环播放 */
     loop: false,
     /** 是否显示分页dot */
