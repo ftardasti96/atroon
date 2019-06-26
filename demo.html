@@ -16,8 +16,21 @@
 
   <body>
     <div class="container2" data-fs-scroll>
-      <div onmousewheel="test(event)" class="sections">
-        <div class="section section0"></div>
+      <div class="sections">
+        <div class="section section0">
+          <div class="">
+            <div class="">
+              <nav class="l">
+                <div class="on">
+                  <a href="#">EN</a>
+                  <a href="#" class="active">PER</a>
+                  <a href="#">AR</a>
+                  <a href="#">GER</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
         <div class="section section1">
           <div class="">
             <div class="row sec1-r1">
@@ -381,7 +394,7 @@
         <!-- </div> -->
       </div>
       <div class="textEventContainer container">
-        <h5 class="textEvent">مزایا</h5>
+        <h5 class="textEvent">خانه</h5>
       </div>
     </div>
 
@@ -398,7 +411,14 @@
     <script src="js/planet.js"></script>
     <script>
       var planetIndex = 6;
-      var title = ["مزایا", "برتر", "تکنیک‌ها", "نمونه‌کارها", "لیست‌قیمت"];
+      var title = [
+        "خانه",
+        "مزایا",
+        "برتر",
+        "تکنیک‌ها",
+        "نمونه‌کارها",
+        "لیست‌قیمت"
+      ];
       $(".container2").fsScroll({
         keyboard: true,
 
@@ -408,7 +428,7 @@
           $(".rightTeil").animate({ opacity: 0, top: 0 }, "swing");
           $(".textEvent").text(title[index]);
           // $("#ship5").animate({ opacity: 0 });
-          if (index == 4) {
+          if (index == 6) {
             window.enablePlanet();
           } else {
             window.disablePlanet();

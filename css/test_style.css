@@ -312,7 +312,7 @@ a:active {
   color: #ceb06b;
 }
 .l {
-  display: flex;
+  /* display: flex; */
   /* width: 14.2vw; */
   background: rgb(0, 1, 1, 0.4);
   position: absolute;
@@ -320,14 +320,16 @@ a:active {
   top: 4.41400304414003vh;
   border-top-left-radius: 3.94px;
   border-bottom-left-radius: 3.94px;
-  z-index: 15;
+  z-index: 105;
 }
 .l a {
   text-decoration: none;
-  font-size: 0.878vw;
+  font-size: 0.8vw;
   font-family: MyriadLight;
   color: white;
-  padding: 0.125em 0.4vw;
+  padding-left: 0.8vw;
+  display: inline-block;
+  margin: auto;
 }
 .l a:hover,
 a:active {
@@ -337,7 +339,7 @@ a:active {
 .on {
   /* background: orange; */
   text-align: end;
-  margin-right: 4em;
+  margin-right: 3vw;
   z-index: 170;
 }
 .tst {
