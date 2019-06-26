@@ -12,45 +12,18 @@
     <link rel="stylesheet" href="./bootstrap4/css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/test_style.css" />
+    <link rel="stylesheet" href="./css/styleLoader.css" />
     <style>
       .spinner {
-        width: 40px;
-        height: 40px;
-        background-color: #333;
+        width: 100px;
+        height: 100px;
+        background-color: #000;
 
         position: absolute;
         top: 48%;
         left: 48%;
         -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
         animation: sk-rotateplane 1.2s infinite ease-in-out;
-      }
-
-      @-webkit-keyframes sk-rotateplane {
-        0% {
-          -webkit-transform: perspective(120px);
-        }
-        50% {
-          -webkit-transform: perspective(120px) rotateY(180deg);
-        }
-        100% {
-          -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
-        }
-      }
-
-      @keyframes sk-rotateplane {
-        0% {
-          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-        }
-        50% {
-          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-        }
-        100% {
-          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-          -webkit-transform: perspective(120px) rotateX(-180deg)
-            rotateY(-179.9deg);
-        }
       }
       .spinner-wrapper {
         position: fixed;
@@ -66,7 +39,32 @@
 
   <body>
     <div class="spinner-wrapper">
-      <div class="spinner"></div>
+      <div class="atroon">
+        <section class="a">
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1920 1080"
+            xml:space="preserve"
+          >
+            <g>
+              <path
+                class="st0"
+                fill="#000"
+                stroke="#ceb06b"
+                stroke-width="6"
+                d="M991.67,603.5h-75.5c-25.85,
+                0-42-28-29.08-50.38l43.83-75.91c12.92-22.39,45.24-22.39,58.16,0l43.83,75.92c12.93,22.38-3.23,50.37-29.08,50.37H991.67"
+              />
+            </g>
+          </svg>
+          <img src="./image/2.svg" alt="second svg" class="inside" />
+        </section>
+      </div>
     </div>
     <div class="container2" data-fs-scroll>
       <div class="sections">
