@@ -12,24 +12,77 @@
     <link rel="stylesheet" href="./bootstrap4/css/bootstrap.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/test_style.css" />
+    <style>
+      .spinner {
+        width: 40px;
+        height: 40px;
+        background-color: #333;
+
+        position: absolute;
+        top: 48%;
+        left: 48%;
+        -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+        animation: sk-rotateplane 1.2s infinite ease-in-out;
+      }
+
+      @-webkit-keyframes sk-rotateplane {
+        0% {
+          -webkit-transform: perspective(120px);
+        }
+        50% {
+          -webkit-transform: perspective(120px) rotateY(180deg);
+        }
+        100% {
+          -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg);
+        }
+      }
+
+      @keyframes sk-rotateplane {
+        0% {
+          transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        }
+        50% {
+          transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+          -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        }
+        100% {
+          transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+          -webkit-transform: perspective(120px) rotateX(-180deg)
+            rotateY(-179.9deg);
+        }
+      }
+      .spinner-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        z-index: 999999;
+      }
+    </style>
   </head>
 
   <body>
+    <div class="spinner-wrapper">
+      <div class="spinner"></div>
+    </div>
     <div class="container2" data-fs-scroll>
       <div class="sections">
         <div class="section section0">
-            <div class="row">
-                <div class="d-none d-lg-block col-lg-12 col-xl-12">
-                  <nav class="l">
-                    <div class="on">
-                      <a href="#">EN</a>
-                      <a href="#" class="active">PER</a>
-                      <a href="#">AR</a>
-                      <a href="#">GER</a>
-                    </div>
-                  </nav>
+          <div class="row">
+            <div class="d-none d-lg-block col-lg-12 col-xl-12">
+              <nav class="l">
+                <div class="on">
+                  <a href="#">EN</a>
+                  <a href="#" class="active">PER</a>
+                  <a href="#">AR</a>
+                  <a href="#">GER</a>
                 </div>
-              </div>
+              </nav>
+            </div>
+          </div>
         </div>
         <div class="section section1">
           <div class="">
@@ -411,14 +464,7 @@
     <script src="js/planet.js"></script>
     <script>
       var planetIndex = 6;
-      var title = [
-        "",
-        "مزایا",
-        "برتر",
-        "تکنیک‌ها",
-        "نمونه‌کارها",
-        "لیست‌قیمت"
-      ];
+      var title = ["", "مزایا", "برتر", "تکنیک‌ها", "نمونه‌کارها", "لیست‌قیمت"];
       $(".container2").fsScroll({
         keyboard: true,
 
@@ -447,5 +493,18 @@
       });
     </script>
     <script src="./js/mouse.js"></script>
+    <script>
+      $(document).ready(function() {
+        //Preloader
+        $(window).on("load", function() {
+          preloaderFadeOutTime = 500;
+          function hidePreloader() {
+            var preloader = $(".spinner-wrapper");
+            preloader.fadeOut(preloaderFadeOutTime);
+          }
+          hidePreloader();
+        });
+      });
+    </script>
   </body>
 </html>
