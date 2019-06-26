@@ -102,10 +102,6 @@ body {
 }
 .section1 {
   background: #000;
-  /* background: olive; */
-  background-image: url("../image/STARS.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 .section2 {
   background: linear-gradient(#0e2f24, #000);
