@@ -33,7 +33,7 @@
   /* border: 3px solid navy; */
 }
 .logo {
-  display: flex;
+  /* display: flex; */
   max-width: 10%;
   margin-left: 2vw;
 }
@@ -79,7 +79,7 @@ a:active {
   /* border: red 2px solid; */
 }
 .telephone-three {
-  display: flex;
+  /* display: flex; */
   max-width: 8%;
   margin-bottom: 5.2vh;
   /* width: 100%; */
